@@ -8,7 +8,7 @@ exit 1;
 fi
 
 readarray -t source < $1;
-read -p "what you searching about: " search;
+read -p "what do you searching about: " search;
 for i in "${source[@]}"; do
 	echo $'\n\n';
 	echo -e "\033[1;31m${i}\033[0m";
